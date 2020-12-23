@@ -9,6 +9,11 @@ require_relative "EtherscanAPI"
 
 api_key = File.file?('api.key') ? File.open('api.key').read : ''
 
+x = 1598
+puts "x"
+
+puts "api.key: " + api_key
+
 sl = sl = SimpleLog.new({:verbose => true})
 sl.p "\n\n----------{ running #{$0} - #{Time.now.utc} }----------\n\n"
 
